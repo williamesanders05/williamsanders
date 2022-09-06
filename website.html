@@ -27,6 +27,7 @@
 			<ul>
 				<li id="about">About Me</li>
 				<li id="project">Projects</li>
+				<li id="cert">Certifications</li>
 				<li class="contact"><a href="https://forms.gle/zmGai2KCAPNWD3b67">Contact Me</a></li>
 			</ul>
 		</div>
@@ -43,6 +44,7 @@
 		var about = document.getElementById('about');
 		var project = document.getElementById('project');
 		var main = document.getElementById('main');
+		var cert = document.getElementById('cert');
 
 		var aboutClick = function(){
 			label.textContent = "About Me";
@@ -56,6 +58,12 @@
 			img.src = "socialstocks.jpg";
 		}
 		project.addEventListener('click', projectClick);
+		var certClick = function(){
+			label.textContent = "CompTIA ITF+ Certified";
+			body.innerHTML = "I have taken the time to earn my CompTIA IT Fundamentals certification";
+			img.src = "comptiacert.jpg";
+		}
+		cert.addEventListener('click', certClick);
 	</script>
 </body>
 </html>
